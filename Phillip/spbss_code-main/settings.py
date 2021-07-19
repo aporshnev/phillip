@@ -53,7 +53,13 @@ SESSION_CONFIGS = [
         app_sequence=['ret'],
         num_demo_participants=1,
     ),
-
+    dict(
+        name='my_survey',
+        display_name='Hello its my experiment!',
+        app_sequence=['my_survey'],
+        num_demo_participants=1,
+        beliefs=False
+    ),
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
